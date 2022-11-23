@@ -1,0 +1,19 @@
+---
+# required
+workingPath: C:\Users\fbh\Desktop\AngelaLab\homology2function\workingPath # it must be exist and has writing permission
+projectName: test1 # refer to legal variable name in most of the program language
+identityTable: C:\Users\fbh\Desktop\AngelaLab\homology2function\data\input.tsv # see demo identity table
+
+# optional
+resume: false
+uniprotSetting:
+    run: true # true by default, user should explicitly set to false when they do not want to draw data from uniprot database
+    runMode: online # online\locally (need to set up database)
+    database: C:\Users\fbh\Desktop\AngelaLab\homology2function\uniprotDatabase # ignored when runMode set to online
+
+entrezSetting:
+    run: true # true by default, user should explicitly set to false when they do not want to draw data from entrez database
+    runMode: online # online\locally (online by default, need to set up database when running locally)
+    database: C:\Users\fbh\Desktop\AngelaLab\homology2function\entrezDatabase # ignored when runMode set to online
+
+...
